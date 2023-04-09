@@ -1,0 +1,144 @@
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+}
+
+/*var(--Light-red)*/
+
+body{
+    background-color: var(--Smokey-grey);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeiraParte{
+    border-radius: 8px 8px 80px 8px;
+    width: 500px;
+    height: 350px;
+    background-color: var(--White);
+    margin-top: 120px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.formulario_itens{
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    color: var(--Light-red);
+}
+
+label{
+    font-weight: 400;
+    color: var(--Smokey-grey);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#dia, #mes, #ano{
+    width: 100px;
+    height: 40px;
+    margin: 5px 10px 5px 0px;
+    border: 1px solid var(--Light-grey);
+    color: var(--Off-black);
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-position: center;
+    background-size: 25px;
+    background-color: var(--Purple);
+    border-style: none;
+    position: relative;
+    top: 88px;
+}
+
+.linha{
+    border-bottom: 1px solid var(--Light-grey);
+    width: 350px;
+    margin: 5px 0 8px 49px;
+}
+
+.texto{
+    color: var(--Off-black);
+    font-weight: 800;
+    font-size: 60px;
+    margin: 0px 0px 0px 49px;
+    line-height: 55px;
+}
+
+.texto_resposta{
+    color: var(--Purple);
+}
+
+@media screen and (max-width: 1440px){
+    .primeiraParte{
+        width: 500px;
+        height: 350px;
+    }
+
+    #dia, #mes, #ano{
+        width: 100px;
+    }
+
+    .linha{
+        width: 350px;
+        margin: 5px 0 8px 49px;
+    }
+
+    .texto{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .primeiraParte{
+        width: 362px;
+        height: 350px;
+    }
+
+    .formulario{
+        margin-left: 35px;
+    }
+
+    #dia, #mes, #ano{
+        width: 80px;
+    }
+
+    .linha{
+        width: 300px;
+        margin: 25px 0 20px 30px;
+    }
+
+    .texto{
+        font-size: 50px;
+    }
+
+    .botao{
+        right: 160px;
+        width: 60px;
+        height: 40px;
+        top: 95px;
+    }
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section class="primeiraParte">
+  <form action="" class="formulario">
+      <p class="formulario_itens formularioDia">
+        <label for="" class="tDia">Day</label>
+        <input type="number" name="txtn" id="dia" placeholder="DD">
+      </p>
+  
+      <p class="formulario_itens formularioMes">
+        <label for="" class="tMes">Month</label>
+        <input type="number" name="txtn" id="mes" placeholder="MM">
+      </p>
+  
+      <p class="formulario_itens formularioAno">
+        <label for="" class="tAno">Year</label>
+        <input type="number" name="txtn" id="ano" placeholder="YYYY">
+      </p>
+
+      <input type="button" value="" class="botao" onclick="calcular()">
+  </form>
+
+  <div class="linha"></div>
+    <p class="texto"><span class="texto_resposta resAnos">--</span> years</p>
+    <p class="texto"><span class="texto_resposta resMeses">--</span> months</p>
+    <p class="texto"><span class="texto_resposta resDias">--</span> days</p>
+</section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
