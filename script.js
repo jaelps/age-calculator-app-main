@@ -28,12 +28,10 @@ function calcular(){
 
 
             var calculoAno = (dAno - ano)
-            alert(calculoAno)
             var resAnos = document.querySelector('.resAnos')
             resAnos.innerHTML = `${calculoAno}`
-
+            
             var calculoMes = Math.abs((mes - 12)+12)
-            alert(calculoMes)
             var resMes = document.querySelector('.resMeses')
             resMes.innerHTML = `${calculoMes}`
 
@@ -79,6 +77,6 @@ function calcular(){
          
         }
     } else {
-        alert('errado')
+        alert('erro')
     }
 }
